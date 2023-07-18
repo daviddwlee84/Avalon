@@ -1627,10 +1627,11 @@ User.prototype.godSet = function(){
   })
 }
 
+// BUG..?
 User.prototype.restart = function(){
   this.checkCreater({
-    successCallback : function(socketId,number){
-      var room = rooms.get(number) ;
+    successCallback : function(socketId, number){
+      var room = rooms.get(number);
       room.reset();
     }
   })
@@ -1877,6 +1878,7 @@ io.sockets.on('connection', function (socket) {
   })
   socket.on("restart", function (data){
     var player = users.get(socket.id) ;
+    // BUG: TypeError: player.restart is not a function
     player.restart();
   });
   socket.on("start", function (data){
