@@ -1,6 +1,16 @@
 # Avalon
-自製的線上阿瓦隆遊戲，歡迎一起同樂！  
-正式伺服器：[Avalon](http://elefanfan.com:8080/avalon/)  
-測試伺服器：[Avalon](http://elefanfan.com:8070/avalon/)  
-### 2016/12/12  
-未來網站更新將不會同步更新此repo。
+
+## Getting Started
+
+### Run In Docker
+
+```sh
+docker build -t avalon .
+docker run --name Avalon -it -p 8080:8080 avalon
+
+# Go to http://localhost:8080/
+```
+
+## Trouble Shooting
+
+### Unable to create room (`createButton`)
