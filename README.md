@@ -29,3 +29,10 @@ TypeError: player.restart is not a function
     at _combinedTickCallback (internal/process/next_tick.js:132:7)
     at process._tickCallback (internal/process/next_tick.js:181:9)
 ```
+
+### Chat username is unidentify
+
+As title
+
+> And seems cannot go mission
+
